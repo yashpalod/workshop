@@ -7,6 +7,6 @@ if (isset($_POST['submit'])) {
     $sql = "insert into category (catname) values ('$cn')";
     $res = mysqli_query($db_conn, $sql);
     if (mysqli_affected_rows($db_conn)) {
-        echo "inserted successfully";
+        header('Location:viewcategory.php');
     }
 }

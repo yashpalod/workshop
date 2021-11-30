@@ -57,6 +57,19 @@
                     </ul>
                 </div>
             </li>
+            <li>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                        Product
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="addproduct.php">Add</a></li>
+                        <li><a href="viewproduct.php">View</a></li>
+                    </ul>
+                </div>
+            </li>
+
             <li><a href="logout.php">Logout</a> </li>
 
         </ul>

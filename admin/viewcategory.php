@@ -43,8 +43,8 @@ include('connection.php');
                     echo "<tr>";
                     echo "<td>$i</td>";
                     echo "<td>" . $row['catname'] . "</td>";
-                    echo "<td><a href='editcat.php?cid='" . $row['catid'] . "' >  Edit</a></td>";
-                    echo "<td>Delete</td>";
+                    echo "<td><a href='editcat.php?cid=" . $row['catid'] . "' >  Edit</a></td>";
+                    echo "<td><a href='deletecat.php?cid=" . $row['catid'] . "' >  Delete</a></td>";
                     echo "</tr>";
                     $i++;
                 }
