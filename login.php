@@ -40,7 +40,7 @@
                     <div class="mt-4">
                         <div class="col-12">
                             <p class="text-center mb-0">
-                                Not have an Account? <a href="reg.php">Register here!</a>
+                                Not have an Account? <a href="custreg.php">Register here!</a>
                             </p>
                         </div>
                     </div>

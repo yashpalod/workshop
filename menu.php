@@ -4,7 +4,7 @@
             <a class="navbar-brand" href="#">Workshop</a>
         </div>
         <ul class="nav navbar-nav">
-            <li class="active"><a href="home.php">Home</a></li>
+            <li class="active"><a href="index.php">Home</a></li>
             <li><a href="product.php">Product</a></li>
             <li><a href="#">Page 2</a></li>
             <li>
@@ -34,10 +34,11 @@
 
             <li>
                 <?php
-                if (isset($_SESSION['USNM'])) {
+                session_start();
+                if (isset($_SESSION['CUNM'])) {
                     echo '<a href="logout.php?logout">Logout</a>';
                 } else {
-                    echo '<a href="reg.php?reg">Sign In/Sign up</a>';
+                    echo '<a href="login.php?login">Sign In/Sign up</a>';
                 }
                 ?>
             </li>
