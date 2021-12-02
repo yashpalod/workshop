@@ -18,12 +18,11 @@ if (isset($_POST['submit'])) {
     $dest1 = $dest . $pin;
 
     if (move_uploaded_file($pintmp, $dest1)) {
-        echo "Image Uploaded Successfully";
 
         $sql = "insert into product values('','$pn','$pcn','$ppn','$pdn','$pnp','$pq','$pde','$vn','$pda','$dest1')";
         $res = mysqli_query($db_conn, $sql);
         if (mysqli_affected_rows($db_conn)) {
-            echo "Insert Success";
+            header('Location:viewproduct.php');
         }
     }
 }
